@@ -1,12 +1,11 @@
 import { useFetchMovies } from "../hooks/fetch"
 import Loading from "../components/Loading";
-import { POSTER_BASE_URL } from "../config/keys";
 import { useState, useRef, useEffect } from "react";
-import { Navigate } from "react-router-dom";
+import MovieCard from "../components/MovieCard";
 
 export default function Home(){
     const [ page, setPage ] = useState(1);
-    const { list, loading, error } = useFetchMovies('now_playing',page);
+    const { list, loading, error } = useFetchMovies('top_rated',page);
     const loadingRef = useRef(0);
 
     useEffect(()=>{
@@ -23,13 +22,10 @@ export default function Home(){
     },[list])
     
 
-    return <section className="p-4 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-4 place-items-center">
+    return <div>
     {error && <p>{error}</p>}
-    { list && list.map((movie)=>{
-        return <div key={movie.id}>
-            <img src={POSTER_BASE_URL+movie.poster_path} alt="" loading="lazy" />
-        </div>
-    })} 
-    { loading && <div ref={loadingRef} className="mt-50"><Loading /> </div>}
-    </section>
+    { list &&  <section className=" p-4 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-4 place-items-center"><MovieCard list={list} /> </section>}
+    { loading && <div ><Loading /> </div>}
+    <div ref={loadingRef} ><Loading /> </div>
+    </div>
 }
