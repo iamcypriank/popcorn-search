@@ -20,10 +20,10 @@ export default function Header(){
         className="h">
 
             <header 
-            className="p-4 bg-bg-secondary-light dark:bg-bg-secondary-dark px-4 flex justify-between items-center sticky top-0">
+            className="p-4 bg-bg-secondary-light dark:bg-bg-secondary-dark px-4 flex justify-between items-center sticky top-0 z-50 w-full">
 
                 <h1 
-                className="text-font-primary-light dark:text-font-primary-dark text-xl font-bold flex gap-1"> <Popcorn color={`${theme=='dark' ? '#FFFFFF' : '#000' }`} /> PopcornSearch</h1> 
+                className="text-font-primary-light dark:text-font-primary-dark text-xl font-bold flex gap-1"> <Popcorn color={`${theme=='dark' ? '#FFFFFF' : '#000' }`} /> <span className="max-sm:hidden">PopcornSearch</span></h1> 
                 
                 <div className="flex gap-4  ">     
                     <SearchBar />

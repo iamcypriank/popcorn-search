@@ -3,7 +3,7 @@ import { ACCESS_TOKEN } from "../config/keys";
 
 
 
-export const useFetchMovies= (path='now_playing',page=1)=>{
+export const useFetchMovies= (path='top_rated',page=1)=>{
     const [ list , updateList ] = useState([]);
     const [ loading , setLoading ] = useState(true);
     const [ error , setError ] = useState(null);
