@@ -3,6 +3,8 @@ import Error from "../pages/Erorr"
 import Home from "../pages/Home"
 import Navbar from "../components/Navbar"
 import Popular from "../pages/Popular"
+import Nowplaying from "../pages/Nowplaying"
+import Upcoming from "../pages/Upcoming"
 
 
 export const router = createBrowserRouter([
@@ -17,6 +19,14 @@ export const router = createBrowserRouter([
             },{
                 path : "/popular",
                 element : <Popular />
+            },
+            {
+                path : "/now_playing",
+                element : <Nowplaying />
+            },
+            {
+                path : "/upcoming",
+                element : <Upcoming />
             }
         ]
     }

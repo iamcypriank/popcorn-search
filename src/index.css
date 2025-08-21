@@ -21,7 +21,7 @@
     @apply text-font-primary-light dark:text-font-primary-dark text-xl font-bold ;
   }
   span{
-    @apply text-font-primary-light dark:text-font-primary-dark text-base font-bold hover:text-accent-light
+    @apply text-font-primary-light dark:text-font-primary-dark text-base font-medium hover:text-accent-light
   }
 
 }
