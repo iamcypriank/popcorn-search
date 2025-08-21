@@ -1,8 +1,9 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { Popcorn, Sun, Moon, Search, Menu} from "lucide-react";
 import Button from "./Button";
 import { useGetTheme } from "../context/ThemeContext";
 import SearchBar from "./SearchBar";
+
 
 
 export default function Header(){
@@ -22,12 +23,14 @@ export default function Header(){
             <header 
             className="p-4 bg-bg-secondary-light dark:bg-bg-secondary-dark px-4 flex justify-between items-center sticky top-0 z-50 w-full">
 
-                <h1 
-                className="text-font-primary-light dark:text-font-primary-dark text-xl font-bold flex gap-1"> <Popcorn color={`${theme=='dark' ? '#FFFFFF' : '#000' }`} /> <span className="max-sm:hidden">PopcornSearch</span></h1> 
+                <div 
+                className="text-font-primary-light dark:text-font-primary-dark text-xl font-bold flex gap-1"> <Popcorn color={`${theme=='dark' ? '#FFFFFF' : '#000' }`} /> <h1 className="max-sm:hidden">PopcornSearch</h1></div> 
                 
                 <div className="flex gap-4  ">     
                     <SearchBar />
-                    <nav className="flex justify-center items-center">
+                    <nav className="flex justify-center items-center gap-4">
+                        <Link to="/"><span>Top Rated</span></Link>
+                        <Link to="/popular"><span>Popular</span></Link>
                         <Button onClick={handleTheme}>
                         { theme=='dark' ? <Moon color='#FFFFFF' size={16} /> : <Sun color='#000' size={16} /> } 
                     </Button>
