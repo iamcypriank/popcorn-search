@@ -15,3 +15,13 @@
   --color-font-secondary-dark: #6B6B6B;
 }
 
+@layer base{
+
+  h1{
+    @apply text-font-primary-light dark:text-font-primary-dark text-xl font-bold ;
+  }
+  span{
+    @apply text-font-primary-light dark:text-font-primary-dark text-base font-bold hover:text-accent-light
+  }
+
+}
