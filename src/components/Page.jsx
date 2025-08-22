@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react";
 import MovieCard from "../components/MovieCard";
 
 export default function Home({ path }){
-    console.log(path);
     const [ page, setPage ] = useState(1);
     const { list, loading, error } = useFetchMovies(path,page);
     const loadingRef = useRef(0);

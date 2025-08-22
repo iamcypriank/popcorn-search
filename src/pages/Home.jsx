@@ -3,5 +3,5 @@ import MovieCard from "../components/MovieCard";
 import Page from "../components/Page";
 
 export default function Home(){
-    return <Page path='top_rated' />
+    return <Page path='movie/top_rated' />
 }

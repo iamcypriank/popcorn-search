@@ -17,7 +17,7 @@ export const useFetchMovies= (path='top_rated',page=1)=>{
             signal
         }
         try{
-             const response = await fetch(`https://api.themoviedb.org/3/movie/${path}?page=${page}`,options);
+             const response = await fetch(`https://api.themoviedb.org/3/${path}?page=${page}`,options);
              const data = await response.json();
              if(!data.results) throw new Error('resource not found');
              updateList(prev => {

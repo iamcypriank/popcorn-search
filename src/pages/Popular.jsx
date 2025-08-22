@@ -3,5 +3,5 @@ import MovieCard from "../components/MovieCard";
 import Page from "../components/Page";
 
 export default function Popular(){
-    return <Page path="popular" />
+    return <Page path="movie/popular" />
 }

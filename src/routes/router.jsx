@@ -6,6 +6,7 @@ import Popular from "../pages/Popular"
 import Nowplaying from "../pages/Nowplaying"
 import Upcoming from "../pages/Upcoming"
 import Movie from "../components/Movie"
+import SearchPage from "../pages/SearchPage"
 
 
 export const router = createBrowserRouter([
@@ -32,6 +33,9 @@ export const router = createBrowserRouter([
             {
                 path : "/movie/:movieid",
                 element : <Movie />
+            },{
+                path : "/search/:movie",
+                element : <SearchPage />
             }
         ]
     }
