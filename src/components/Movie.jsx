@@ -5,6 +5,7 @@ import { useReducer } from "react";
 import  Loading from "./Loading";
 import { POSTER_BASE_URL } from "../config/keys";
 import Genre from "./Genre";
+import { motion } from "motion/react";
 
 
 
@@ -71,7 +72,11 @@ export default function Movie(){
     return <>
     { state.error && <p> {state.error}</p> }
     { state.loading && <Loading /> }
-    { state.movie && <section className="p-4">
+    { state.movie && <motion.section 
+    initial={{opacity : 0}}
+    animate={{opacity : 1}}
+    transition={{ duration : 0.7 }}
+    className="p-4">
         <div className="dark:bg-bg-secondary-dark bg-bg-secondary-light grid gap-4 grid-cols-[auto_1fr] max-sm:flex max-sm:flex-col ">
             <img className="w-[200px]" src={POSTER_BASE_URL+state.movie.poster_path} alt="" />
             <div className="p-4 flex flex-col gap-2   ">
@@ -90,6 +95,6 @@ export default function Movie(){
         <div>
 
         </div>
-    </section> }
+    </motion.section> }
     </>
 }
