@@ -12,7 +12,7 @@
   --color-font-primary-light : #000;
   --color-font-primary-dark :  #FFFFFF ;
   --color-font-secondary-light : #6B6B6B;
-  --color-font-secondary-dark: #6B6B6B;
+  --color-font-secondary-dark: #e6e6e6;
 }
 
 @layer base{
@@ -22,6 +22,9 @@
   }
   span{
     @apply text-font-primary-light dark:text-font-primary-dark text-base font-medium hover:text-accent-light
+  }
+  p{
+    @apply text-font-secondary-light dark:text-font-secondary-dark
   }
 
 }
