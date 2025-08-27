@@ -1,12 +1,30 @@
-# React + Vite
+# 🛒 QuickCart – E-commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuickCart is a responsive shopping cart application built with **React** and powered by the **Platzi Fake Store API**.  
+It allows users to browse products, filter by category, sort by price, and manage items in a shopping cart 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- 📂 Product listing with **category filters**  
+- 💰 Price sorting: **Low-to-High / High-to-Low**  
+- 🛍️ Add, remove, and manage items in a **shopping cart** with real-time totals  
+- 🔐 **Protected Profile Page** (only for authenticated users)  
+- 🎨 Modern, responsive UI with **Tailwind CSS**  
+- ⚡ Global state management using **React Context API**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Tech Stack
+- **Frontend:** React, React Router, Context API, Tailwind CSS  
+- **Backend/API:** Platzi Fake Store API  
+- **Deployment:** Netlify  
+- **Version Control:** Git & GitHub  
+
+---
+
+## 🚀 Live Demo
+🔗 [View on Netlify](https://quickcartio.netlify.app/)  
+
+
+
