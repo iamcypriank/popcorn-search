@@ -1,30 +1,30 @@
-# 🛒 QuickCart – E-commerce Web App
+# 🍿 Popcorn Search – Movie Finder Web App
 
-QuickCart is a responsive shopping cart application built with **React** and powered by the **Platzi Fake Store API**.  
-It allows users to browse products, filter by category, sort by price, and manage items in a shopping cart 
+Popcorn Search is a responsive movie search application built with **React**. It fetches movie data from an external Movie API and allows users to discover and explore movies with a clean and modern UI.
 
 ---
 
 ## ✨ Features
-- 📂 Product listing with **category filters**  
-- 💰 Price sorting: **Low-to-High / High-to-Low**  
-- 🛍️ Add, remove, and manage items in a **shopping cart** with real-time totals  
-- 🔐 **Protected Profile Page** (only for authenticated users)  
-- 🎨 Modern, responsive UI with **Tailwind CSS**  
-- ⚡ Global state management using **React Context API**
+- 🔍 Real-time movie search with API integration  
+- 📖 Detailed movie information (title, year, poster, etc.)  
+- 🎨 **Light/Dark theme toggle** for better accessibility  
+- 📱 Fully responsive design for mobile and desktop  
 
 ---
 
 ## ⚙️ Tech Stack
-- **Frontend:** React, React Router, Context API, Tailwind CSS  
-- **Backend/API:** Platzi Fake Store API  
+- **Frontend:** React, React Router, Tailwind CSS  
+- **API:** External Movie API (OMDb or similar)  
 - **Deployment:** Netlify  
-- **Version Control:** Git & GitHub  
+- **Version Control:** Git & GitHub
 
 ---
 
 ## 🚀 Live Demo
-🔗 [View on Netlify](https://quickcartio.netlify.app/)  
+🔗 [View on Netlify](https://popcornsearchio.netlify.app)
 
 
 
+
+- GitHub: [@your-username](https://github.com/your-username)  
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-linkedin)
